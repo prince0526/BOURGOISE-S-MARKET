@@ -317,31 +317,41 @@ nav h1 {
   }
 
 .contact-container {
-    background-color: rgb(221, 188, 183);
+    background-color: rgb(255, 255, 255);
     height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0%;
+    margin: 0 40px;
+    
     
 }
 
   .contact {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 40px 20px;
-    background-color: #da9a9a;
+    height: 400px;
+    background-color: #c2b3b3;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    width: 500px;
+    width: 1000px;
     margin: 50px auto;
     border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .box-image{
+    flex: 1;
+    background-image: url("images/food.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
   }
 
   .Form {
+    flex: 1;
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding: 40px;
   }
 
   label {
@@ -353,7 +363,7 @@ nav h1 {
   input, textarea {
     margin-bottom: 20px;
     padding: 10px 12px;
-    border: 1px solid #daa8a8;
+    border: 1px solid #ffffff;
     border-radius: 8px;
     font-size: 16px;
     resize: vertical;
@@ -361,7 +371,7 @@ nav h1 {
 
   button {
     padding: 12px 20px;
-    background-color: #660b0b;
+    background-color: #494646;
     color: white;
     border: none;
     border-radius: 8px;
@@ -371,7 +381,7 @@ nav h1 {
   }
 
   button:hover {
-    background-color: #a04545;
+    background-color: #1b1b1b;
   }
 
   @media (max-width: 600px) {
@@ -379,4 +389,75 @@ nav h1 {
       padding: 20px;
       margin: 20px;
     }
+  }
+
+  
+  .footer-content img {
+    width: 50px;
+    height: 50px;
+
+  }
+
+  
+
+  .footer-content {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    height: 20vh;
+  }
+
+  .socials{
+    display: flex;
+    flex-direction: row;
+  }
+  
+
+  .facebook, .twitter, .instagram {
+    margin: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+
+    .facebook:hover, .twitter:hover, .instagram:hover {
+        transform: scale(1.25);
+    }
+
+  .socials a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: color 0.50s ease;
+  }
+
+  .footer-msg{
+    margin-left: 80px;
+  }
+
+  .footer-msg h2{
+    margin: 0%;
+    padding: 0%;
+    font-size: 45px;
+  }
+
+  .footer-msg p{
+    margin-top: 0%;
+    padding: 0%;
+    
+  }
+
+  .footer-bottom {
+    background-color: rgb(255, 255, 255);
+    margin: 0%;
+  }
+
+  .footer-bottom p {
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    color: rgb(0, 0, 0);
   }
